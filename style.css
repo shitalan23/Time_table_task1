@@ -1,0 +1,287 @@
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#fff;
+  color:#333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+  width:100%;
+  padding:20px 0 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+  border-bottom:1px solid #e5e5e5;
+  background:#fff;
+}
+
+.logo{
+  height:42px;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:1px;
+  color:#333;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#000;
+}
+
+/* ================= SEARCH BAR ================= */
+.search-box{
+  margin:18px auto 28px;
+  width:380px;
+  display:flex;
+  align-items:center;
+  background:#f6f6f6;
+  border-radius:30px;
+  padding:6px 10px;
+  border:1px solid #ddd;
+}
+
+.search-box input{
+  flex:1;
+  border:none;
+  outline:none;
+  background:transparent;
+  padding:10px 16px;
+  font-size:14px;
+  color:#333;
+}
+
+.search-box input::placeholder{
+  color:#999;
+}
+
+.search-box button{
+  background:#f5c518;
+  border:none;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.3s ease;
+}
+
+.search-box button i{
+  font-size:15px;
+  color:#000;
+}
+
+.search-box button:hover{
+  background:#ffd84d;
+  transform:scale(1.1);
+}
+
+/* ================= HERO ================= */
+.hero{
+  min-height:60vh;
+  background:url("background.png") no-repeat center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px;
+}
+
+.hero-text{
+  color:#fff;
+  max-width:500px;
+}
+
+.hero-text h1{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.hero-text p{
+  font-size:14px;
+}
+
+/* ================= ABOUT ================= */
+.about{
+  padding:40px 120px;
+  text-align:center;
+}
+
+.about h2{
+  margin-bottom:20px;
+}
+
+.about p{
+  font-size:14px;
+  line-height:1.8;
+}
+
+/* ================= CARDS ================= */
+.cards-section{
+  padding:50px 60px;
+  text-align:center;
+}
+
+.cards{
+  display:flex;
+  gap:30px;
+  margin-top:30px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card{
+  background:#f2ebe6;
+  padding:20px;
+  flex:1 1 30%;
+  max-width:32%;
+}
+
+.card img{
+  width:100%;
+  height:480px;
+  object-fit:cover;
+  object-position:top;
+}
+
+.card h3{
+  margin:15px 0;
+  font-size:16px;
+}
+
+.card p{
+  font-size:15px;
+  line-height:1.6;
+  width:80%;
+  margin:10px auto;
+  text-align:justify;
+}
+
+.card p::before{
+  content:"";
+  display:block;
+  width:100%;
+  height:2px;
+  background:#ccc;
+  margin:0 auto 10px;
+}
+
+.card span{
+  display:block;
+  margin-top:10px;
+  font-size:12px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#333;
+  color:#fff;
+  padding:40px;
+  text-align:center;
+}
+
+.footer-links{
+  margin-top:15px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.footer-links a{
+  margin:8px 15px;
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+}
+
+/* ================= TABLET ================= */
+@media (max-width:900px){
+  .about{
+    padding:40px 60px;
+  }
+
+  .cards-section{
+    padding:30px;
+  }
+
+  .card{
+    flex:1 1 45%;
+    max-width:48%;
+  }
+
+  .card img{
+    height:380px;
+  }
+
+  .hero-text h1{
+    font-size:38px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width:600px){
+  .logo{
+    height:32px;
+  }
+
+  .nav-links{
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .search-box{
+    width:90%;
+  }
+
+  .hero{
+    padding:30px;
+  }
+
+  .hero-text h1{
+    font-size:32px;
+  }
+
+  .about{
+    padding:30px 20px;
+  }
+
+  .cards-section{
+    padding:15px;
+  }
+
+  .cards{
+    gap:15px;
+  }
+
+  .card{
+    flex:1 1 100%;
+    max-width:100%;
+    padding:15px;
+  }
+
+  .card img{
+    height:320px;
+  }
+
+  footer{
+    padding:30px 20px;
+  }
+}
